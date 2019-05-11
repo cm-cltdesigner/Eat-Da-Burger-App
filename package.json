@@ -1,7 +1,6 @@
 {
   "name": "Week8-Demburger",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -26,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/cm-cltdesigner/Eat-DemBurger-App/issues"
   },
-  "homepage": "https://github.com/cm-cltdesigner/Eat-DemBurger-App#readme"
+  "homepage": "https://github.com/cm-cltdesigner/Eat-DemBurger-App#readme",
+  "description": ""
 }
