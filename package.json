@@ -1,0 +1,29 @@
+{
+  "name": "Week8-Demburger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express-handlebars": "^3.0.2",
+    "express": "^4.16.4",
+    "mysql": "^2.17.1",
+    "package.json": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cm-cltdesigner/Eat-DemBurger-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cm-cltdesigner/Eat-DemBurger-App/issues"
+  },
+  "homepage": "https://github.com/cm-cltdesigner/Eat-DemBurger-App#readme"
+}
