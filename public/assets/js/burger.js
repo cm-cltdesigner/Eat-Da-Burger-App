@@ -16,11 +16,29 @@ $(function () {
         })
     })
 
-    $(".eatburger").on)"click", function(event) {
+    $(".eatburger").on("click"), function (event) {
         event.preventDefault();
 
         var id = $(this).("id"), {
-            
-        }
-    }
-})
+            var devouredState = {
+                devoured: 1
+
+            };
+    });
+$.ajax("/api/burgers/", id, {
+    type: "PUT",
+    data: devouredState
+}).then(function () {
+    console.log("Burger devoured");
+    location.reload();
+});
+$("trashburger").on("click", function (event) {
+    event.preventDefault();
+    var id = $(this).("id");
+    // send the delete request
+    $.ajax({
+        type: "DELETE",
+        url: "/api/burgers/" + id
+    }).then(location.reload());
+
+});
