@@ -9,7 +9,7 @@
             <form class="create-form">
                 <div class="form-group">
                     <label for="newburger">Order Fresh Burger</label>
-
+                    {{!-- hdbars --}}
                     <select data-placeholder="" id="newburger" name="burger">
                         <option value="Nothing Selected" selected>Please Select a Sandwich</option>
                         <option value="Hamburger">Hamburger</option>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="panel-body">
 
-                    <ul>
+                    <ul> {{!-- hdbars --}}
                         {{#each burgers}}
                         {{#unless devoured}}
 
@@ -55,6 +55,7 @@
                 </div>
                 <div class="panel-body">
                     <ul>
+                        {{!-- hdbars --}}
                         {{#each burgers}}
                         {{#if devoured}}
                         <span><strong> {{this.id}} - {{this.burgers_name}}</strong></span>
@@ -68,8 +69,12 @@
             </div>
         </div>
     </div>
-<footer><center>
-		<div id="footer" class="container">
-			<h4 id="copyright">Powered By: GitCreativ LLC.&copy; | 2019</h4>
-		</div></footer></center></div>
-	</footer>
+    <footer>
+        <center>
+            <div id="footer" class="container">
+                <h4 id="copyright">Powered By: GitCreativ LLC.&copy; | 2019</h4>
+            </div>
+    </footer>
+    </center>
+</div>
+</footer>
