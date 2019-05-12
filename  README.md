@@ -1,15 +1,17 @@
-# Welcome to the Fascinating Friend Finder App.
+# Welcome to the Eat Demburger App.
 <img src="https://media.tenor.com/images/31b970ddb6cb0d20af2a9c1141d7261f/tenor.gif"><br>
-A compatibility-based "FriendFinder" application was build in the repo. This full-stack site will take in results from the users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
+In this repo a burger logger with MySQL, Node, Express, Handlebars and a ORM was created. MVC design pattern was used; utilizing Node and MySQL to query and route data in this app, with Handlebars to generate your HTML.
 
-## How does it work?
-This App is a full stack node app deployed on Heroku. Data is saved on a file, instead of a database. It uses `Express` to configure and operate the server, `Body-Parser` to pass the JSON data back and forth between files & functions, and `fs` to read & write from the data files on the server. Many routes are setup to complete the survey, to view the JSON API, and post data into the app. One route file will bring all users to the homepage, regardless of the path the user attempts to access.
+## App Setup
+Make a package.json file by running 'npm init' from the command line. Install the Express npm package: 'npm install express'. A server.js file was created. Install the Handlebars npm package: 'npm install express-handlebars'. Install MySQL npm package: 'npm install mysl'.
+
+##Directory Structure
+├── config │   ├── connection.js │   └── orm.js │  ├── controllers │   └── burgers_controller.js │ ├── db │   ├── schema.sql │   └── seeds.sql │ ├── models │   └── burger.js │  ├── node_modules │  ├── package.json │ ├── public │   └── assets │      ├── css │      │   └── burger_style.css │      └── img │      └── burger.png │   │ ├── server.js │ └── views ├── index.handlebars └── layouts └── main.handlebars
 
 ## How can I use the app?
-Deployment on a node server is required. This app is setup to listen on a Heroku default port; in the absence of Heroku, it listens to local port of 3000 instead. <img src="https://i.ibb.co/w6598sY/Screen-Shot-2019-05-09-at-8-12-00-PM.png"><br>
- After downloading the repository, run `npm i` from the command line to ensure you have the necessary packages included in the package.json file.
+Deployment on a node server is required. This app is setup to listen on a Heroku default port; in the absence of Heroku, it listens to local port of 3000 instead.<br><img src="https://i.ibb.co/2h2tGbb/Screen-Shot-2019-05-10-at-10-01-31-PM.png">
 
-## Example of the Fascinating Friend Finder App
+## Example of the Eat Demburger App
 Feel free to visit the [Live Demo](https://eat-demburger.herokuapp.com)
 
 
